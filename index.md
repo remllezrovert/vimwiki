@@ -13,7 +13,6 @@
 # Math
 [integration](integration.md) </br>
 [vectors](vectors.md) </br>
-[sequences](sequences.md) </br>
 [series](series.md) </br>
 
 

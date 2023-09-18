@@ -39,7 +39,6 @@ Acronym | Value | Bytes
 ```java
 public class ExampleCars{
 public Vehicle carArrayReference[];
-
     public static void main(String[] args){
         Vehicle car1 = new Vehicle();
         Vehicle car2 = new Vehicle();
@@ -57,10 +56,12 @@ public Vehicle carArrayReference[];
 
 
 - Array indexing starts at zero.
-- for loops use the format **for (start, stop, step) {}**
+- for loops use the format **for (start; stop; step) {}**
 - The example below will iterate through every car in the car array lowest to highest and make it drive.
-```jaava
+
+```java
 public class ExampleLoop{
+
     public static void main(String[] args){
         for (int i = 0; i < carArrayReference.length; i++) {
             carArrayReference[i].drive();

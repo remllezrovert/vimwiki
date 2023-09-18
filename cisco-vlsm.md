@@ -69,15 +69,6 @@ two IP addresses that are reserved in every subnet: The broadcast address and th
 The broadcast address has all ones in the binary host portion resulting in 192.168.255.255. </br>
 
 
-#### RFC1918
-
-Address type | Number of Addreses | Number of Host Bits | Number of Network Bits
--------------|--------------------|---------------------|----------------------
-10.0.0.0     | 16,777,216           | 24                  | 8
-172.16.0.0   | 1,048,576            | 20                  | 12
-192.168.0.0  | 65,536              | 16                  | 16
-
-
 ___
 
 ### Subnetting Proceedure
@@ -88,7 +79,6 @@ ___
 
 3. Write the number of bits in the network portion on the upper right corner of the notebook page. Draw a slash to the left of this number.
 
-4. Choose a RFC1918 address type from the table above based on the total number of hosts in all of your subnets. 
 
-5. 
-
+4. Write the first address given to the left of the number 
+5. Find the second most populus subnet and write it's host address below the previous host addres

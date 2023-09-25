@@ -112,3 +112,65 @@ public class ExampleClass{
 
 </summary> </details>
 
+
+<details> <summary>String Formatting</summary>
+
+
+- By default printing a 'char' will output it's ascii id number
+- specify that you want to output the char as a string: System.out.print("" + exampleChar);
+
+Escape Sequence | Char
+----------------|-----------
+`\n` | newline
+`\t` | tab
+`\'` | single quote
+`\'` | double quote
+`//` | backslash
+
+
+```java
+public class example{
+    double myDouble = 23.45
+    public static void main(String[] args){
+    System.out.println("say \"Hello\" using quotes inside a string with escape sequence");
+    System.out.println("\tIndented by one tab");
+    System.out.println("\\ this is a backslach inside a string");
+    System.out.printf("%.2f\n", double ) //this prints a formated double with a newline after it
+    }
+}
+```
+
+
+
+
+</summary> </details>
+
+
+<details> <summary>scnr</summary>
+
+method  | purpose
+--------|-----------
+nextLine() | prints the entire line including any whitespace
+next() | print the first word in the string exculding whitespace
+
+
+</summary> </details>
+
+
+<details> <summary>Math </summary>
+
+
+
+Method | Behavior | Example
+-------|----------|--------
+sqrt(x) | Square root | Math.sqrt(9.0);
+pow(x,y) | $x^y$ | Math.pow(2.3,3.4);
+abs | $/mid x /mid$ | Math.abs(-99.3);
+
+
+- The modulo operator '%' evaluates the remainder of a division problem Example: `58 % 10 = 8`
+
+
+</summary> </details>
+
+

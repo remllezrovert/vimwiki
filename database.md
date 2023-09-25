@@ -3,7 +3,7 @@
 
 
 1. SELECT
-2. FROM
+2. FROM (aliases live here)
 3. WHERE
 4. GROUP
 5. HAVING
@@ -32,8 +32,20 @@ pattern        | matches
 
 </summary> </details>
 
+<details> <summary>Outer Joins</summary>
+
+- Outer joins are inclusive
+- Outer joins will output null values
 
 
+</summary> </details>
+
+
+
+
+
+
+#### Inner Joins
 <details> <summary>Inner Joins</summary>
 
 - Inner joins only return rows that meet all the join conditions. 
@@ -51,29 +63,39 @@ INNER JOIN table_b
 WHERE table_a.foo = table_b.bar;
 ~~~
 
-You can filter inner joins using the "AND" keyword:
-~~~
+* You can filter inner joins using the "AND" keyword:
+
+* This queary uses the USING keyword to join tables, which is the same as  `on table_a.key = table_b.key`:
+    ```sql
 SELECT 
     table_a.foo,
     table_b.bar,
 FROM table_a
 INNER JOIN table_b
-    ON table_a.key = table_b.key
+    USING key
         AND table_a.foo = table_b.bar
         AND Table_a.foo > 2;
-~~~
+```
 
+
+* Self joins allow the selection of rows within the same table that have maching values
+* Example: Show every posible combination of couples that could occor in north leeds
+* The WHERE clause at the end exists so that 
+    + People are not coupled with themselves in the output
+    + It prevents "Bob and Jim" from being listed a second time as "Jim and Bob".
+    ```sql
+SELECT p1.FullName, p2.FullName, p1.Residence
+FROM Population AS p1
+INNER JOIN Population AS p2 ON p1.Residence = p2.Residence
+WHERE p1.ID < p2.ID;
+```
 
 </summary> </details>
 
 
 
 
-<details> <summary>Outer Joins</summary>
-
-- Outer joins are inclusive
-- Outer joins will output null values
 
 
-</summary> </details>
+
 

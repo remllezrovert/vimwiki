@@ -9,10 +9,41 @@
 
 ##### [cisco-base-config](cisco-base-config.md) </br>
 
+[cisco-vlans](cisco-vlans.md)
 
 
 
 
+
+
+
+<details> <summary>Trunks and vlans</summary>
+
+* vLans are basically groups of ports on the same switch that are logically separated into groups.
+* ISL - Inter Switch Link trunks.
+    + tag all traffic going through the trunk with a vLan ID allowing multiple vLans to use one cable. 
+    + trunk is used to connect multiple switches with multiple vLans while keeping traffic separated.
+* 802.1q Trunk
+    + Native vLans have Un-tagged traffic for security to stop "spoofed tag attacks". 
+
+
+
+New Command | what it does
+------------|-------------
+vlan 33 | creates or edits a vlan
+(config-vlan)# name bleh | names a vlan bleh
+do sh vlan brief | shows vlan
+(config-if)switchport trunk encapsulation dot1q | sets the trunk mode to the modern 802.1q.
+(config-if)switchport nonegotiate | disables the trunk mode legacy compatability
+(config-if)switchport mode trunk | sets the interface as a trunk, doesn't work on layer 3 switch
+(config-if)switchport access vlan 33 | Allows the interface to access vlan 33
+(config-if)switchport trunk allowed vlan 33,44,55,63 | allow vlans to cross the trunk link
+(config-if)switchport trunk native vlan 888 | sets the native vlan
+(config-if)do sh int trunk | shows useful information about the trunk
+
+
+
+</summary> </details>
 
 <details> <summary>Commands </summary>
 

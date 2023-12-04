@@ -39,6 +39,9 @@ ___
 
 ### Subnetting Proceedure
 
+<table>
+<tr><th> Example Problem </th></tr>
+<tr><td>
 
 Address | Network portion | Host portion | Available Host Number | Desired number of hosts
 --------|-----------------|--------------|-----------------|----------------
@@ -49,14 +52,17 @@ Address | Network portion | Host portion | Available Host Number | Desired numbe
 192.168.2.224 | /27 | 5 | 30 | 15
 192.168.3.0 | /28 | 4 | 14 | 8
 
+</td></tr>
+</table>
+
 ##### 1. Getting Organized
 
-* a. Draw the column labels of the table above on the top right corner of a notebook page to organize information
+* a. Draw the column labels of the example table above on the top right corner of a notebook page to organize information. We will call the new table you have created "your table".
 * b. Draw a crude diagram of your network on the bottom left corner of a notebook page. Label each subnet with the number of hosts that it will contain
 
 ##### 2. Writing out the first row in your table
 * a. Write the given starting address in first row address column </br>
-* b. Select the largest subnet and write the desired number of hosts in the first row of the table in it's designated column </br>
+* b. Select the largest subnet and write the desired number of hosts in the first row of your table in it's designated column </br>
 * c. write the row's corisponding network portion, host portion, and available number based on the desired number of hosts.
     + See the [Host Portion Size](#host-portion-size) guidelines found above for more information. </br>
 
@@ -91,8 +97,8 @@ $v$|128|64|32|16|8|4|2|1
     + Take note of which octet $v$ is found in we will call this $O$
     + The values in the table are founding using this equation: $v = 2^{mod(H_b,8)}$.
 
-* d. Add $v$ to the $O$ octet of the address in the previous row on a calculator
-    + If the result is less than 255 then write this address into the ip column of the current row.
+* d. Add $v$ to the $O$ octet of the address in your previous row 
+    + If the result is less than 255 then write this address into the ip column of your current row.
      + If the result is greater than or equal to 255 then this value is invalid and a bit shift is needed.
     + Repeat step three until a bit shift is needed. 
 

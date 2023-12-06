@@ -45,7 +45,7 @@ network 10.1.10.0 255.255.255.128
 ipv6 dhcp pool Students6
 address prefix 2001:db8:1:8::/64
 dns-server 2001:4860:4860::8888
-ipv6 default-router 2001:db8:1:8::1
+!ipv6 default-router 2001:db8:1:8::1
 domain-name k12.local
 ip dhcp excluded-address 10.1.10.129 10.1.10.134
 ip dhcp pool Faculty
@@ -67,7 +67,7 @@ network 10.1.10.192 255.255.255.192
 ipv6 dhcp pool Staff6
 address prefix 2001:db8:1:A::/64
 dns-server 2001:4860:4860::8888
-ipv6 default-router 2001:db8:1:A::1
+!ipv6 default-router 2001:db8:1:A::1
 domain-name k12.local
 ip dhcp excluded-address 10.1.11.1 10.1.11.5
 ip dhcp pool ITmgmt 
@@ -83,7 +83,7 @@ network 10.200.100.0 255.255.255.0
 ipv6 dhcp pool WebServers6 
 address prefix 2001:db8:64:0::/64
 dns-server 2001:4860:4860::8888
-ipv6 default-router 2001:db8:64:0::1
+!ipv6 default-router 2001:db8:64:0::1
 domain-name k12.local
 ip dhcp pool HRServers 
 DNS-server 8.8.8.8
@@ -93,7 +93,7 @@ network 10.200.101.0 255.255.255.0
 ipv6 dhcp pool HRServers6 
 address prefix 2001:d8:64:1::/64
 dns-server 2001:4860:4860::8888
-ipv6 default-router 2001:db8:64:1::1
+!ipv6 default-router 2001:db8:64:1::1
 domain-name k12.local
 ip dhcp pool AdminServers 
 DNS-server 8.8.8.8
@@ -103,7 +103,7 @@ network 10.200.102.0 255.255.255.0
 ipv6 dhcp pool AdminServers6
 address prefix 2001:db8:64:2::/64
 dns-server 2001:4860:4860::8888
-ipv6 default-router 2001:db8:64:2::1
+!ipv6 default-router 2001:db8:64:2::1
 domain-name k12.local
 ip dhcp pool ITmgmt 
 DNS-server 8.8.8.8

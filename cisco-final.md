@@ -26,7 +26,7 @@ line vty 0 15
 transport input ssh
 login local
 banner motd % keep out %
-!ip default-gateway 10.200.1.150.1 255.255.255.128
+ip default-gateway 10.200.1.150.1
 ! commands below this point are unqiue to routers
 line aux 0
 password cisco
@@ -35,45 +35,45 @@ ipv6 unicast-routing
 ! Static route may need to be altered to match AdminServer's gateway
 ip route 0.0.0.0 0.0.0.0 10.200.102.1
 ipv6 route ::/0 2001:db8:64:2::1
+ip dhcp excluded-address 10.1.10.1 10.1.10.5
 ip dhcp pool Students
 DNS-server 8.8.8.8
 default-router 10.1.10.1
 domain-name k12.local
 lease 0 4
-ip dhcp excluded-address 10.1.10.1 10.1.10.5
 network 10.1.10.0 255.255.255.128
 ipv6 dhcp pool Students6
 address prefix 2001:db8:1:8::/64
 dns-server 2001:4860:4860::8888
 ipv6 default-gateway 2001:db8:1:8::1
 domain-name k12.local
+ip dhcp excluded-address 10.1.10.129 10.1.10.134
 ip dhcp pool Faculty
 DNS-server 8.8.8.8
 default-router 10.1.10.129
 domain-name k12.local
-ip dhcp excluded-address 10.1.10.129 10.1.10.134
 network 10.1.10.128 255.255.255.192
 ipv6 dhcp pool Faculty6
 address prefix 2001:db8:1:9::/64
 dns-server 2001:4860:4860::8888
 ipv6 default-gateway 2001:db8:1:9::1
 domain-name k12.local
+ip dhcp excluded-address 10.1.10.193 10.1.10.198
 ip dhcp pool Staff
 DNS-server 8.8.8.8
 default-router 10.1.10.193
 domain-name k12.local
-ip dhcp excluded-address 10.1.10.193 10.1.10.198
 network 10.1.10.192 255.255.255.192
 ipv6 dhcp pool Staff6
 address prefix 2001:db8:1:A::/64
 dns-server 2001:4860:4860::8888
 ipv6 default-gateway 2001:db8:1:A::1
 domain-name k12.local
+ip dhcp excluded-address 10.1.11.1 10.1.11.5
 ip dhcp pool ITmgmt 
 DNS-server 8.8.8.8
 default-router 10.1.11.1
 domain-name k12.local
-ip dhcp excluded-address 10.1.11.1 10.1.11.5
 network 10.1.11.0 255.255.255.224
 ip dhcp pool WebServers
 DNS-server 8.8.8.8
@@ -169,8 +169,6 @@ name NativeOnly
 
 
 ! Does this need vlans 11-13???
-
-
 
 !! ADD DHCP RELAY STUFF should be config-if???
 ip helper-address 10.200.102.10

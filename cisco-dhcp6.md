@@ -1,5 +1,10 @@
 # Cisco DHCP
-by Trevor Zellmer
+by Trevor Zellmer </br>
+
+Links:
+> [cisco](cisco.md) </br>
+> [cisco-dhcp](cisco-dhcp.md) </br>
+
 
 ## Purpose:
 DHCPv6 does the same thing as DHCP but with ipv6. The way the protocols function is actually quite a bit different.

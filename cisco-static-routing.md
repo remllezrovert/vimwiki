@@ -1,7 +1,12 @@
 
 
 # Static Routing
-by Trevor Zellmer
+by Trevor Zellmer </br>
+
+
+Links: 
+> [cisco](cisco.md) </br>
+
 
 ## Purpose
 Technology often fails, so having routes, and backup routes is often important to ensuring connectivity especially for critical infrastructure. This document explains how to configure static and floating next-hop routes on routers and a layer three switch.

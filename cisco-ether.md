@@ -1,6 +1,10 @@
 # EtherChannel
 
-by Trevor Zellmer
+by Trevor Zellmer </br>
+
+
+Links:
+> [cisco](cisco.md) </br>
 
 ## Purpose:
 Etherchannel combines multiple interfaces so that they act as a single interface on the device. There are several etherchannel protocals. Cisco's propritary protocal is called PAgP, the open source etherchannel protocal is LACP.

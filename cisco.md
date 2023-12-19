@@ -1,6 +1,7 @@
- Networking
-[index](index.md) </br>
+# Networking
 
+
+[index](index.md)
 
 
 
@@ -9,10 +10,10 @@
 
 
 
-[cisco-vlsm](cisco-vlsm.md)  </br>
-[cisco-intervlan-routing](cisco-intervlan-routing.md) </br>
-[cisco-vlans](cisco-vlans.md) </br>
 [cisco-base-config](cisco-base-config.md) </br>
+[cisco-vlsm](cisco-vlsm.md)  </br>
+[cisco-vlans](cisco-vlans.md) </br>
+[cisco-intervlan-routing](cisco-intervlan-routing.md) </br>
 [cisco-static-routing](cisco-static-routing.md) </br>
 [Spanning Tree Proceedural](cisco-stp.md) </br>
 [cisco-ether](cisco-ether.md) </br>
@@ -21,7 +22,6 @@
 [cisco-hsrp](cisco-hsrp.md) </br>
 [cisco-security](cisco-security.md)
 
-[cisco-final](cisco-final.md)
 
 </summary> </details>
 
@@ -44,8 +44,7 @@
 
 <details> <summary>Security</summary>
 
-
-
+[cisco-security](cisco-security.md) </br>
 Secure unused ports like this:
 ```
 vlan 1000
@@ -66,7 +65,7 @@ switchport port-security
 end
 ```
 
-Prevent VLan hopping attacks
+Prevent Vlan hopping attacks
 ```
 !non trunking ports 
 switcport mode access
@@ -150,6 +149,8 @@ switchport port-security mac-address aaa.bbb.ccc
 
 <details> <summary>EtherChannel</summary>
 
+[cisco-ether](cisco-ether.md) </br>
+
 
 - Combine multiple interfaces to act as one
 - Interfaces must have identical speed, duplex, etc
@@ -191,7 +192,8 @@ switchport port-security mac-address aaa.bbb.ccc
 <details> <summary>static routing</summary>
 
 
-
+[cisco-static-routing](cisco-static-routing.md) </br>
+[cisco-intervlan-routing](cisco-intervlan-routing.md) </br>
 ```
 int gi0/0
 ip add 192.178.1.1 255.255.255.0
@@ -244,6 +246,7 @@ How to get there:
 
 <details> <summary>Spanning tree</summary>
 
+[Spanning Tree Proceedural](cisco-stp.md) </br>
 - Redundency can create loops which result in broadcast storms and duplicate unicast frames.
 - "Port flapping" getting multiple copies of the same mac address from different ports. PROBLEM
 - Spanning tree prevents this by blocking one of the links if a storm is detected
@@ -252,8 +255,8 @@ How to get there:
 - A 'BID' or bridge id,  has a mac address, vlan id, and a bridge priority (lower is better)
 - PVST:  if there are two possible routes to a device, load balence across both switches
 - RSTP:  Load balencing STP, backwards compatable, 
-    ```
 
+```
 !Enables modern PVST mode
 spanning-tree mode rapid-pvst
 
@@ -279,9 +282,7 @@ spanning-tree portfast bpduguard default !global safeguard to prevent broadcast 
 spanning-tree bpduguard enable !single interface safeguard to prevent broadcast storm
 spanning-tree portfast edge bpduguard default
 spanning-tree portfast bpduguard default
-
-
-    ```
+```
 
 
 
@@ -293,6 +294,9 @@ spanning-tree portfast bpduguard default
 
 
 <details> <summary>Trunks and vlans</summary>
+
+[cisco-vlans](cisco-vlans.md)
+
 
 * vLans are basically groups of ports on the same switch that are logically separated into groups.
 * ISL - Inter Switch Link trunks.
@@ -320,7 +324,7 @@ do sh vlan brief | shows vlan
 
 </summary> </details>
 
-<details> <summary>Commands </summary>
+<details> <summary>Basic Commands </summary>
 
 #### Command Modes
    prompt       |   Name of mode     | purpose
@@ -389,7 +393,6 @@ no shutdown               | turn on the interface
 
 
 
-[index](index.md)
 
 
 

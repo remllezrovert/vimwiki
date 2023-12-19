@@ -1,5 +1,10 @@
 # Cisco DHCP
-by Trevor Zellmer
+by Trevor Zellmer </br>
+
+Links:
+> [cisco](cisco.md) </br>
+> [cisco-dhcp6](cisco-dhcp6.md) </br>
+
 
 ## Purpose:
 DHCP is useful because it allows people to join and leave the network without wasting ip addresses. It also takes away the tedious step of manually assigning an ip address to each device on the network.

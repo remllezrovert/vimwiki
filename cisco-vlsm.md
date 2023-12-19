@@ -1,7 +1,12 @@
 
 
 # VLSM Subnetting
-By Trevor Zellmer.
+By Trevor Zellmer. </br>
+
+Links: </br>
+> [cisco](cisco.md) </br>
+
+
 
 
 ### Purpose

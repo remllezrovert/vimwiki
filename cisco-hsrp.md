@@ -1,5 +1,8 @@
 # Cisco HSRP 
-by Trevor Zellmer
+by Trevor Zellmer </br>
+
+Links:
+> [cisco](cisco.md) </br>
 
 ## Purpose:
 HSRP allows for failover when routers fail. This is useful because it allows for reduncency within networks which helps minimise 

@@ -2,6 +2,11 @@
 
 # Vlan procedure
 
+Links:
+> [cisco](cisco.md) </br>
+> [cisco-intervlan-routing](cisco-intervlan-routing.md) </br>
+
+
 ## Purpose
 Vlans are useful because they allow people to separate traffic into different isolated groups on the same switch, reducing the need for 
 multiple switches. Vlan trunking allows traffic from multiple vlans to cross a single eithernet cable while remaining logically isolated.

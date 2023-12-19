@@ -1,7 +1,17 @@
-Cisco Security
+# Cisco Security
 by Trevor Zellmer
 
-Purpose:
+Links:
+> [cisco](cisco.md) </br>
+
+## Purpose:
+Securing ports and preventing DHCP flooding attacks is important. 
+Without securty measures in place attackers can shut down networks
+or get access to private information.
+
+
+
+<details> <summary>New commands</summary>
 
 
 New Command | What it does
@@ -34,22 +44,22 @@ ip arp inspection vlan 33,44,55 | enable arp inspection on vlans
 (config-if) switcport port-security aging static  | do not age addresses.
 (config-if) switcport port-security aging time 14 | remove mac address 14 minutes after the aging condition
 (config-if) ip dhcp snooping trust | use this for uplinks and server ports. Don't trust user ports
-
-ADD SPANNING TREE PORTFAST COMMANDS!!!!
-
-
-ALS2
-1. sh ip arp inspection int
-2. sh ip arp inspection
-3. sh ip arp inspection vlan 33
-4. sh ip dhcp snooping
-5. sh ip dhcp snooping bind
-6. sh ip dhcp snooping data
-8. sh port-security
+spanning-tree portfast | disable spanning tree on a single interfacd
+spanning-tree portfast default | older global spanning tree portafast command 
+spanning-tree portfast edge | spanning tree portfast single interface for modern switches
+spanning-tree portfast edge default | spanning tree portfast global for modern interfaces
+spanning-tree portfast bpduguard default | global safeguard to prevent broadcast storm
+spanning-tree bpduguard enable | single interface safeguard to prevent broadcast storm
+spanning-tree portfast bpduguard default | enable bpduguard
 
 
-<details>Theory<summary></summary>
+</summary> </details>
 
+</br>
+
+
+
+<details><summary>Theory</summary>
 
 
 Secure unused ports like this:
@@ -125,6 +135,7 @@ switchport port-security mac-address aaa.bbb.ccc
 </summary> </details>
 
 
+</br>
 
 
 
@@ -139,13 +150,15 @@ switchport port-security mac-address aaa.bbb.ccc
 
 
 
-1. Blackhole all unused vlans, DHCP no information option
+1. Blackhole all unused vlans
+```
 vlan 1000
 name BlackHole
 int range g1/0/19-20, g1/0/25-28
 shut
 switchport mode access
 switchport access vlan 1000
+```
 
 
 2. Dhcp snooping and arp inspection on all switches (with table)
@@ -156,7 +169,7 @@ switchport access vlan 1000
 - e. **no ip dhcp snooping information option**
 
 
-Trust vlan trunks
+3. Trust vlan trunks
 - a. **int range po1-2**
 - b. **ip dhcp snooping trust**
 - c. **ip arp inspection trust**
@@ -164,22 +177,45 @@ Trust vlan trunks
 
 
 
-port security stuff on ALS2
+4. Port security stuff on ALS2
+
+
+
+- a. Assign the interface a specific mac address, and shutdown if a violation occurs:
 ```
 int g1/0/1
     switchport port-security
     switchport port-security mac-address 00-0C-29-53-26-A1
     switchport port-security violation shutdown
+```
+</br>
+
+- b. Allow interfaces to learn mac addresses 
+
+```
 int range g1/0/2-6
     switchport port-security
     switchport port-security mac-address sticky
     switchport port-security violation shutdown
+```
+
+
+- c. Only allow two mac addresses on theses interfaces. 
+Wipe the interface after 5 minutes if there is no activity:
+```
 int range g1/0/7-14
     switchport port-security
     switchport port-security max 2
     switchport port-security aging type inactivity
     switchport port-security aging time 5
     switchport port-security violation shutdown
+```
+
+
+- d. Only allow five mac addresses on theses interfaces. 
+Wipe the interface after 10 minutes if there is no activity:
+
+```
 int range g1/0/15-18
     switchport port-security
     switchport port-security max 5
@@ -188,7 +224,17 @@ int range g1/0/15-18
     switchport port-security violation restrict
 ```
 
-Port security stuff on ALS3
+
+
+5. Port security stuff on ALS3
+- a. Same commands as step 4
+- b. Use different port ranges
+
+<details> <summary>Commands for ALS3</summary>
+
+
+
+
 ```
 int g1/0/1
     switchport port-security
@@ -212,6 +258,9 @@ int range g1/0/13-18
     switchport port-security violation restrict
 ```
 
+</summary> </details>
+
+</br>
 
 
 

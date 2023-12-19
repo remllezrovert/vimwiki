@@ -1,7 +1,12 @@
 
 
 # Inter-Vlan Routing
-by Trevor Zellmer
+by Trevor Zellmer </br>
+
+Links: 
+> [cisco](cisco.md) </br>
+> [cisco-vlans](cisco-vlans.md) </br>
+
 
  Purpose
 Vlans are useful for segmenting a network. But what happens if we need computers in different vlans to communicate with one-another? Inter-vlan routing allows this to happen. There are two separate types of inter-vlan routing discussed in this document. The "router on a stick" approach is older and can be used with cheaper equipment, this approach is used in the "r1 network" depicted below. The more efficent, modern inter-vlan routing method uses layer three swiches. This technique is used in the "DLS1 network" depicted below.

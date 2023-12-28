@@ -1,4 +1,4 @@
-            - name: SFTP Sync
+- name: SFTP Sync
   # You may pin to the exact commit or the version.
   # uses: swillner/sftp-sync-action@629e1fe7a2db87d0f1da0e15a970b514fe398c09
   uses: swillner/sftp-sync-action@v1.0

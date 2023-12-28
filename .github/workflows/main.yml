@@ -1,19 +1,19 @@
+name: CI-SFTP
+
 on: [push]
 
 jobs:
-    deploy_job:
+    deploy-via-sftp:
     runs-on: ubuntu-latest
-    name: deploy
     steps:
         - name: Checkout
         uses: actions/checkout@v2
-        - name: Deploy file
+        - name: deploy file
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-            username: ${{ secrets.FTP_USERNAME }}
-            server: ${{ secrets.FTP_SERVER }}
-            port: ${{ secrets.FTP_PORT }}
-            local_path: './*'
+            username: 'root'
+            server: 'your server ip'
+            ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }} 
+            local_path: './'
             remote_path: '/home/remllez/git/vimwiki'
-            sftp_only: true
-            password: ${{ secrets.FTP_PASSWORD }}
+            sftpArgs: '-o ConnectTimeout=5'

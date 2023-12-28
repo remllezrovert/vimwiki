@@ -1,5 +1,5 @@
 name: SFTP Sync
-  uses: swillner/sftp-sync-action@v1.0
+  uses: remllezrovert/sftp-sync-action@v1.0
   with:
     # server
     server: remllez.com

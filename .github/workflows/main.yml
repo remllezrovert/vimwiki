@@ -1,19 +1,24 @@
-name: CI-SFTP
-
-on: [push]
-
-jobs:
-    deploy-via-sftp:
-    runs-on: ubuntu-latest
-    steps:
-        - name: Checkout
-        uses: actions/checkout@v2
-        - name: deploy file
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with:
-            username: 'root'
-            server: 'your server ip'
-            ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }} 
-            local_path: './'
-            remote_path: '/home/remllez/git/vimwiki'
-            sftpArgs: '-o ConnectTimeout=5'
+            - name: SFTP Sync
+  # You may pin to the exact commit or the version.
+  # uses: swillner/sftp-sync-action@629e1fe7a2db87d0f1da0e15a970b514fe398c09
+  uses: swillner/sftp-sync-action@v1.0
+  with:
+    # server
+    server: remllez.com
+    # server port (default: 22)
+    port: ${{ secrets.FTP_PORT }}# default is 22
+    # user
+    user: ${{ secrets.FTP_USERNAME }}
+    # Private SSH key for user (include via secrets if possible)
+    user_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+    # Public SSH key of host
+    host_public_key: # default is 
+    # Local path to sync (default: .)
+    local: # default is .
+    # Path on server (default: .)
+    remote: '/home/remllez/git/' # default is .
+    # Additional options for SSH
+    ssh_options: # optional
+    # Additional options for lftp mirror command (e.g. '--exclude-glob=.git*/ --verbose' is useful)
+    mirror_options: # optional
+          

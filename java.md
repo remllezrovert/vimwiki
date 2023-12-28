@@ -1,29 +1,14 @@
 # Java Programming </br>
  
-[index](index.md)
-
-[java-theory](java-theory.md)
-
-
-[java-classes](java-classes.md)
-
-[java-interfaces](java-interfaces.md)
-
-[java-math](java-math.md)
-
-[java-logic](java-logic.md)
-
-[java-arrays](java-arrays.md)
-
-[java-loops](java-loops.md)
-
-
-[java-strings](java-strings.md)
-
-
-
-
-
+- [index](index.md) </br>
+- [java-theory](java-theory.md) </br>
+- [java-classes](java-classes.md) </br>
+- [java-interfaces](java-interfaces.md) </br>
+- [java-math](java-math.md) </br>
+- [java-logic](java-logic.md) </br>
+- [java-arrays](java-arrays.md) </br>
+- [java-loops](java-loops.md) </br>
+- [java-strings](java-strings.md) </br>
 
 
 <details> <summary>Data types</summary>

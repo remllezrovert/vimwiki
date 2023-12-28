@@ -298,6 +298,7 @@ FROM <table name>
 
 
 Window Function | What it does
+----------------|----------------
 `ROW_NUMBER() OVER(ORDER BY Score)` | number the rows
 `DENSE_RANK() OVER(ORDE BY SCORE)` | rank by score. Ties get indentical ranks. Normal ranking type
 `RANK() OVER(ORDE BY SCORE)` | rank by score. Ties get identical ranks. Not normal ranking 

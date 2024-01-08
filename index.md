@@ -7,6 +7,12 @@
 [python](python.md) </br>
 [database](database.md) </br>
 [cisco](cisco.md) </br>
+[uarch](uarch.md) </br>
+[assembly](assembly.md) </br>
+[dsa](dsa.md) </br>
+
+
+
 
 # Math
 [integration](integration.md) </br>

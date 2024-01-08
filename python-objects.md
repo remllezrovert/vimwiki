@@ -17,7 +17,7 @@ class Person:
         self.age = age
 
     def greeting(self)
-        print("Hi, my name is " + self.name + " and I am " + self.age + " years old."))
+        print("Hi, my name is ", self.name, " and I am ",  self.age, " years old."))
 
 
 p1 = Person("Bill", 36)
@@ -40,7 +40,7 @@ In this example:
 ```python
 class Wizard(person):
     def greeting(self):
-        print("I am a " + super.age +" year old wizard.")
+        print("I am a ", super.age," year old wizard.")
 
 w1 = Wizard("bob", 36)
 w1.greeting()

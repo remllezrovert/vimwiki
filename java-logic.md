@@ -44,6 +44,20 @@ output: </br>
 - A break statement must end each case, or the proceeding case will be triggeres even if it's false.
 
 
+```java
+switch (n) {
+    case 0 -> "hi";
+        break;
+    case 100 -> "hello";
+        break;
+    default -> "this is default"
+        break;
+}
+```
+
+
+
+
 </summary> </details>
 
 

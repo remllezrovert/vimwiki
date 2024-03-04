@@ -8,6 +8,8 @@
 <details> <summary>trig functions</summary>
 
 
+
+
 Derrivative   | Function         | Integral
 --------------|------------------|--------------
 $\cos(x)$ | $\sin(x)$ | $-\cos(x)$

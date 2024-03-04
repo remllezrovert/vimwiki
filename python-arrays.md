@@ -3,7 +3,7 @@
 [index](index.md) </br>
 [python](python.md) </br>
 [python-loops](python-loops.md)
-#### There are four types of arrays in python
+#### There's four types of arrays in python. See [math sets](sets.md)
 <details> <summary>1. Lists</summary>
 
 `thisList = ["apple", "banana", "banana", "cherry"]`

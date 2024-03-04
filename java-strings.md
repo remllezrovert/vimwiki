@@ -43,6 +43,14 @@ stringFour.subSequence(
 
 ```
 
+toCharArray()
+substring()
+split()
+length()
+replateAll()
+
+
+
 
 
 </summary> </details>
@@ -58,4 +66,26 @@ next() | print the first word in the string exculding whitespace
 
 </summary> </details>
 
+
+
+<details> <summary>String Builder</summary>
+
+
+StringBuilder has methods
+StringObject = stringObject.append()
+StringObject = stringObject.insert()
+stringObject.
+
+</summary> </details>
+
+
+
+<details> <summary>Patterns</summary>
+
+```java
+import java.text.DecmialFormat;
+DecimalFoarmat("$###,##0.00);
+```
+
+</summary> </details>
 

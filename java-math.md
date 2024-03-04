@@ -18,3 +18,18 @@ abs | $\mid x \mid$ | Math.abs(-99.3);
 </summary> </details>
 
 
+<details> <summary>Random</summary>
+
+
+
+
+```java
+int min = 1;
+int max = 6;
+int die = (int) Math.random() * (max - min + 1)) + min //(int)
+
+long seed1 = 3;
+rand.setSeed(seed1) #set the randomization seed to get consistant generation
+```
+
+</summary> </details>

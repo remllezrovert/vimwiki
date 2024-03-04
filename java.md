@@ -4,11 +4,15 @@
 - [java-theory](java-theory.md) </br>
 - [java-classes](java-classes.md) </br>
 - [java-interfaces](java-interfaces.md) </br>
-- [java-math](java-math.md) </br>
+- [java-math](java-math.md) </br> 
 - [java-logic](java-logic.md) </br>
 - [java-arrays](java-arrays.md) </br>
 - [java-loops](java-loops.md) </br>
 - [java-strings](java-strings.md) </br>
+- [java-map](java-map.md) </br>
+- [java-exceptions](java-exceptions.md) </br>
+
+
 
 
 <details> <summary>Data types</summary>
@@ -26,6 +30,7 @@ Acronym | Value | Bytes
 
 
 </summary> </details>
+
 
 
 <details> <summary>Enums</summary>
@@ -70,6 +75,20 @@ public static void main(String[] args){
 </summary> </details>
 
 
+<details> <summary>Exception</summary>
+
+```java
+publlic class exampleClass
+{
+    public static void main(String[] args) throws Exception
+    {
+
+    }
+
+}
+```
+
+</summary> </details>
 
 <details> <summary>packages</summary>
 
@@ -92,6 +111,20 @@ public static void main(String[] args){
 
 <details> <summary>Documentation</summary>
 
+
+
+
+</summary> </details>
+
+
+
+<details> <summary>JoptionPane</summary>
+import javax.swing.JOptionPane;
+
+JoptionPane.showMessageDialog(null, "this is a valid number");
+JOptionPane.showMessageDialogue();
+JOptionPane.showInpuDialog();
+JOptionPane.PLAIN_MESSAGE
 
 
 

@@ -4,9 +4,14 @@
 
 <details> <summary>Lingo</summary>
 
-Modular development - Devide a program into modules or microservices. Test and develop each separately.
-Incremental development - test as you develop. Test constantly.
-Method stub - empty or "abstract" method that does nothing YET. Will eventually do something
+Modular development - Devide a program into modules or microservices. Test and develop each separately. </br>
+
+Incremental development - test as you develop. Test constantly. </br>
+
+Method stub - empty or "abstract" method that does nothing YET. Will eventually do something </br>
+
+- Substitution principle - Any subclass of an object can be used in place of that object. You can </br>
+    - Example: you can add both cars and planes to the vehicle array.
 
 
 
@@ -43,4 +48,29 @@ Method stub - empty or "abstract" method that does nothing YET. Will eventually 
 
 </summary> </details>
 
+
+<details> <summary>UML diagrams</summary>
+
+
+
+![java-uml](java-uml.png)
+
+
+Inheritance - Is a relationship
+
+Aggregation - Has a relationship
+
+Dependency - 
+
+Association 
+- A relationship between classes
+- one can navigate from objects of one class to objects of the other class
+- usually this is done by following object references
+
+
+Composition: 
+- An aggregation relationship
+- The aggregated objects do not have an existence independent of the containing object
+
+</summary> </details>
 

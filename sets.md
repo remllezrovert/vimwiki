@@ -137,7 +137,6 @@ Composition functions
 
 
 
-March 20th DiscStruct quiz </br>
 
 
 <details> <summary>Permutation and Combinations</summary>
@@ -195,5 +194,97 @@ $$\binom{1}{n} (n-1)! - \binom{2}{n} (n - 2)!...$$
 
 
 
+
+#### Relations ####
+
+
+
+
+
+
+
+<details> <summary>Digralphs</summary>
+
+- Reflexive property
+    - every value in the set must have at least one mapping to itself
+        - Example: [(a,a), (a,b), (b,b)]
+    - AntiReflexive sets cannot contain values that refer to themselves
+        - Example: [(b,a), (a,b)]
+
+- Symmetric property
+    - If A points to B, then B must point to A. All connections are two way.
+        - Example: [(b,a), (a,b)]
+    - AntiSemetric relations cannot contain semetric pairs
+        - Example: [(a,b), (b,b)]
+
+- Transitive Property
+    - If 'a' points to 'b', then 'b' must point to 'a'
+        - Example: [(a,b), (b,c), (c,a)]
+
+
+
+
+
+
+- An edge is the arrow in the gralph
+    - Head of an edge is a the arrowhead
+    - tail is the end without the head
+- Vertex is a node on the relation gralph
+    - In-degrees of a vertex: number of edges pointing into the edge 
+    - out-degrees of a vertex: the numver of edges pointint out of a edge
+
+
+- walk
+    - Length is the number of edges
+    - Circuit is a walk in which the first vertex is the same as the last vertex
+        - cycle is a type of circuit where there are no other repeated verticies, except the first and last
+    - a path is a walk if no vertex is repeated within the walk
+
+- trail
+    - A special type of walk
+    - No repeated edges
+
+- path
+    - Both a walk and a trail
+    - a subtype of trail
+    - no reapeated edges
+    - no repeated verticies (node things)
+
+</summary> </details>
+
+
+
+- Composite relations
+    - $S \circ R$ = (a,c):b such that aRb and bSc
+    - $R \circ R = R^2$ The squared notations means a composite with itself
+    - Self composites replace transitive relations with direct relations
+    - Self composites replace symmetric relations with reflexive ones
+    - Closure is like addition, or a union
+        - anti-reflexive closure is impossible
+        - reflexive closure is possible
+        - transitive closure is possible
+
+    - Gralph power theorm
+        - Undirected gralph G
+        - Self composited k times
+        - $G^k$
+
+
+- Transitive closures
+      - A set cannot be transitive if it doesn't contain a cycle </br>
+            - ex: Take the set R = {(a,b),(b,c),(c,a),(b,d),(d,e),(e,f),(f,d)} </br>
+            - Start on any node, go on a journey and find it's way back home </br>
+            
+
+    - Represented by $R^+$
+    - Union with the largest walk
+    - Include all of the edges (arrows) from every stage in the end product
+    $$R^+ = R^5 \cup R^4 \cup R^3 \cup R^2 \cup R^1$$
+
+
+
+
+
+Induction
 
 

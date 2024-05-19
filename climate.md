@@ -135,6 +135,16 @@ Oxygen cycle
 
 
 
+Paris agreement goal
+- Temperature goal +1.5C 
+- Zero emissions by 2050
+
+
+
+
+Worst case
+- Temp increase +4.4C 
+
 
 
 </summary> </details>
@@ -243,13 +253,13 @@ Convergent - Surface low pressure systems attract warmer air, which all rises in
 
 High clouds
 - Cirrus
-- - Cirrocumulus
+- Cirrocumulus
 - Cirrostratus
 
 Middle Clouds
-= Altostratus
-Altocumulus
-cumulonimbus
+- Altostratus
+- Altocumulus
+- Cumulonimbus
 
 
 Low clouds
@@ -287,4 +297,211 @@ Shelf cloud - on the front end of a thunderstorm, caused by high winds </br>
 Adiabatic process
 - No heat transfers
 - Warm set of air rises
+
+
+
+
+
+
+
+<details> <summary>Wind</summary>
+
+
+- Pressure gradient force (created by barometric pressure)
+- Coriolis effect causing spining
+- Frictional force (created by objects on the ground)
+- rotational force (created by spinning motions)
+
+
+- Hadley cell (low latitude air movement towards the equator)
+- Ferrel cell (mid latitude air movement towards the poles and eastward in the northern hemispheres)
+- Polar cell (air rises, diverges and travels towarsd the poles)
+- Doldrums
+    - Converging air
+    - Usually equitorial
+    - Unstable, often causes hurricanes
+- Horse latitudes
+    - Diverging air
+    - Fairly calm
+- Ocean circulations
+    - Deep circulations
+- Geostrophic winds (Caused by the coriolis effect and pressue gradient forces)
+    - The balence between pressure gradient forces and the coriolis force
+- Walker conditions
+    - Gulf of mexico storms
+- El Nino Conditions
+    - Warm conditions, drought
+    - Warm water towards asia
+    - Weaker trade winds
+    - Happens in cycles
+- High NAO
+    - High pressure in mid atlantic
+    - Low pressure in north atlantic
+    - This causes rain in England and sweden, and dryness in north africa
+    - Inverse occurs during low NAO
+- Pacific  Decadal Oscillation
+    - roughly 20 year cycles
+- Tropical Cyclones
+    - A Disturbance is a low pressure zone with light winds
+    - A Depression is low pressure + clouds + wind circulation
+    - A storm is an actual structured cyclone or hurricane
+- Hurricane
+    - Wind at or above 74mph
+
+
+
+Convective outlook
+
+
+
+
+</summary> </details>
+
+
+
+
+<details> <summary>Fronts</summary>
+
+
+
+Cyclonic wind
+    - moves counter clockwise in north
+
+- Wind
+    - Measured at surface level
+    - Measured in knots
+
+- Wind Barbs:
+    - immagine wind is blowing straight down on the little flag
+    - each line on the barb is 10 knots 
+
+
+- Stationary front
+    - A front which is not moving
+
+- Occuluded front
+    - Composite of two fronts 
+    - fronts moving in the same direction
+    - Cold front overtaking a warm front
+    - Warm air getting pushed up
+    - Forms new clouds
+    - Causes rain
+
+- Cold fronts
+    - Associated with squal lines
+    - often severe weather
+    - Triple front
+        - tornado zone
+        - warm front perpindicular to cold front
+        - Cold closing high pressure
+        - Warm air low pressure
+
+
+
+
+
+
+
+
+</summary> </details>
+
+
+
+
+<details> <summary>Snow</summary>
+
+Blizzards
+- last more the three hours
+- 35+ mph winds
+- blowing snow
+- low visibility
+
+
+</summary> </details>
+
+
+
+<details> <summary>Thunderstorms</summary>
+
+#### Thunderstorm spectrum ####
+- Any of the three critera below turn a regular thunderstorm into a severe one
+    - Wind speed over 58MPH
+    - Hail of 
+    - Potencial for a tornado
+
+
+- Air mass
+    - weak updraft
+    - minimal threat
+
+- Mulicell cluster
+    - Weak to strong updraft
+    - Slight threat
+
+- Multicell line
+    - Moderate threat
+    - weak to strong updraft
+    - moderate updraft
+    - line  of storms along a front
+    - moves faster than a cluster
+
+- Supercell
+    - Intense updraft
+    - Often causes rotation
+    - Mesocyclone present
+    - High threat
+
+
+Bow echo
+
+- Decending rear inflow jet
+    - Heavy downdraft wind
+
+#### SLIM ####
+Shear - turing of the winds in the atmosphere </br>
+Lift - mechanism to force moit unstable air upward </br>
+Instability - ability for air to rise/sink. measured as potencial energy </br>
+Moisture - needed to produce clouds and thunderstorms </br>
+
+
+
+Lifting mechanisms
+- Orogralphic
+    - mountains
+
+- Convective
+    - Heat rising, moisture condensing
+
+- Frontal
+    - Warm air getting pushed up
+
+
+
+
+
+</summary> </details>
 -
+
+
+<details> <summary>Lightning</summary>
+
+
+
+- Negative charge near the ground
+- Negative charge higher in the sky
+- positive band between the two usually prevents lighting
+- disruption of the positive band results in lightning 
+
+
+
+
+</summary> </details>
+
+
+
+- Hail forms in strong updrafts
+- water builds on the hailstone until the wind isn't powerful enough to hold it up.
+
+
+
+

@@ -9,8 +9,10 @@
 - [java-arrays](java-arrays.md) </br>
 - [java-loops](java-loops.md) </br>
 - [java-strings](java-strings.md) </br>
-- [java-map](java-map.md) </br>
 - [java-exceptions](java-exceptions.md) </br>
+- [collections](collections.md) </br>
+    
+
 
 
 

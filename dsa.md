@@ -67,6 +67,25 @@ down the tree, comparing itself to both children until both children are smaller
 
 
 
+
+<details> <summary>lists</summary>
+
+
+
+#### Linked lists ####
+
+each memory address stores the address of the next address.
+
+
+
+
+#### Doubly linked lists  ####
+each memory address stores the address of the next AND previous address
+
+
+</summary> </details>
+
+
 # Algorythms
 
 
@@ -100,6 +119,86 @@ def binary_search(arr, target):
 
 
 
+<details> <summary>Depth First Search</summary>
+
+
+```python
+n = ##number of nodes
+g = ##adacency list representing the gralph
+def dfs(at):
+    if visited[at]:
+        return
+    else
+        visited[at] = true
+        neighbors = gralph[at]
+        for next in neighbors:
+            dfs(next)
+
+
+## This starts the search
+start_node = 0
+dfs(start_node)
+
+```
+
+</summary> </details>
+
+
+
+<details> <summary>Bredth First Search</summary>
+
+```
+
+input = ### an undirected connect gralph G. rooted at v1
+output = ## a breadth-first search tree
+
+def breadthFirstSearch (Gralph, root):
+    for node in Gralph:
+        n.distance = INFINITY
+        n.parent = nil
+
+        
+
+
+```
+
+
+</summary> </details>
+
+
+
+
+
+<details> <summary>Selection sort</summary>
+
+
+
+
+</summary> </details>
+
+
+
+<details> <summary>Insertion sort</summary>
+
+1. Create two piles, sorted and unsorted
+2. pull elements out of the unsorted
+3. place them into the correct position within the sorted
+
+
+
+</summary> </details>
+
+
+<details> <summary>Merge sort</summary>
+
+- Recursive
+
+
+</summary> </details>
+
+
+
+
 
 
 <details> <summary>Algorithms</summary>
@@ -113,6 +212,9 @@ def binary_search(arr, target):
 - Iteration structure
 
 </summary> </details>
+
+
+
 
 
 

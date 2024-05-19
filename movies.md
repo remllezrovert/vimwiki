@@ -90,7 +90,38 @@ Exam
 
 
 
+<details> <summary>Bodysnachers</summary>
+
+- Directory Don Siegel
+- Main character Miles Bennell
+- Love interest Becky
 
 
 
+
+</summary> </details>
+
+
+
+
+
+
+
+
+
+<details> <summary>Existenz</summary>
+
+
+- Allegra shot in a church using a gun that fired a human tooth
+    - this is apprently because it was the only way to get past a metal detector
+- Allegra uses pronouns to refer to her weird fleshy game console
+
+
+- Ted Pikel
+    - The special in the chinsese food game is a bone gun that fires teeth.
+
+
+
+
+</summary> </details>
 

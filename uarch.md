@@ -4,9 +4,58 @@
 [logic](logic.md) </br>
 [assembly](assembly.md) </br>
 
+
+
+Asm Final
+- Von Neumann Architecture
+- number systems (decimal, binary, octal, hex)
+- number representations (sign magnatude, Two's compliment, IEEE 754 floating point)
+-  boolean algebra
+-  logical operations (rotate, and shift)
+-   Adders, decoders, ALU
+- Karnaugh maps and boolean
+- Finite State Machines
+- MIPS
+    - C -> Assembley Conversions
+    - Register files
+    - memory operations
+
+
+
+
 - Resistors are cheap
 - Transistors are expensive
 - Use less transistors whenever possible
+
+
+
+
+
+Finite state machine
+- mathmatical model used to represent computation
+- finite number of states
+- transitions between states
+- actions associated with these transitions
+- has a set if states
+- has a aphabet set
+- language is the set of strings which takes the FSM to it's accepting states
+
+
+DFA
+$$M = (Q, \Sigma , \delta, q_0, F )$$
+- Q is the set of states
+- $\Sigma$ is a finite input alphabet
+- q is the initial starting state
+- F is a set of accepting states (subsets of Q)
+
+
+Moore machines
+- Specify output in a state bubble
+-
+
+
+Mealy Machines
+- 
 
 
 
@@ -191,4 +240,25 @@ $$cipher^{D} mod(n)$$
 
 
 </summary> </details>
+
+
+
+<details> <summary>C</summary>
+
+
+Assisgn integers a number of bytes
+```C
+uint16_t num1= 0xb35a; #Unsigned 16 bit integer, in hexidecimal
+uint16_t num2= 0xa463; #Unsigned 16 bit integer, in hexidecimal
+uint16_t res;           #Two's compliment
+res = num1 & num2;
+printf(res);
+```
+
+
+</summary> </details>
+
+
+
+
 

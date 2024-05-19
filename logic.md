@@ -1,13 +1,21 @@
 
 # Logic
 
+[sets](sets.md) </br>
+[index](index.md)
 
-Order of operations
+<details> <summary>Order of operations</summary>
+
+
+
+
 1. $\neg$ 
 2. $\land$ 
 3. $\lor$
 4. $\rightarrow$
 5. $\leftrightarrow$
+
+</summary> </details>
 
 <details> <summary>Symbols</summary>
 
@@ -117,6 +125,8 @@ Existential | $\exists_x S(x)$ </br> s(neptune)
 
 
 
+
+
 Generalized Product Rule </br>
 - In every race someone must come first, second, third, fourth, etc.
 - One person cannot occupy two of these positions
@@ -124,4 +134,5 @@ Generalized Product Rule </br>
 
 
 $$\frac{x_1 \cdot x_2 \cdot x_3 \cdot ... x_n}{n}$$
+
 

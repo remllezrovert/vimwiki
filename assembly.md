@@ -73,17 +73,25 @@ main:
 
 
 
-calling convention| what it does
-------------------|-------------
-ecall | trigger interrupt
-addi | add immediate
-sw | store word
-lw | Load Word
-la | load address  (memory)
-li | load immediate
+calling convention| what it does | desc
+------------------|--------------|----
+syscall | perform action using OS | 
+ecall | trigger interrupt |
+sw | store word | store word in register at memory address
+lw | Load Word | load word from memory into register
+la | load address  (memory) | load memory address into register
+li | load immediate | load integer directly into a register
 lui | load upper immediate (see 32 bit info)
 jal | Jump and Link
 jalr | Jump and Link Return
+add \$t1, \$t3, \$t4 | addition | add \$t3 and \$t4
+addi | add immediate | add integer(s) directly into register
+bne \$t1, \$t2, L1 | branch not equal 
+beq \$t1, \$t2, L1 | branch on equal
+ble \$t1, \$t2, L1 | branch on less/equal
+bge \$t1, \$t2, L1 | branch greater/equal
+slt \$t3, \$t2, \$t1 | set register (bool) on less than | places 1 or 0 into \$t3
+
 
 
 macros | desc
@@ -134,8 +142,12 @@ x12-17 | a2-7 | Function arguments | caller
 
 <details> <summary>System Calls</summary>
 
+
+
 - Use register a7 for system calls
 - Place the arguments for the system call in a0
+
+[Syscall Table](https://syscalls.w3challs.com/?arch=mips_o32)
 
 name | #  | Params
 -----|----|----

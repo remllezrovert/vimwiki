@@ -16,6 +16,32 @@
 
 
 
+
+
+<details> <summary>Sequences (Discrete Structres)</summary>
+
+
+- Nth term of a Arithmetic series
+$$a_n = a + d(n-1)$$
+
+- Sum of an Arithmetic series
+$$S_n = \frac{n}{2}(a_1 + a_n)$$
+
+
+- Nth term of a Geometric series
+$$a_1 \cdot r^{n-1}$$
+- Sum of a Geometric series (n terms)
+$$\frac{a(r^n-1)}{r-1}$$
+
+
+
+
+
+
+</summary> </details>
+
+
+
 <details> <summary>Arithmetic and Harmonic Sequences</summary>
 
 #### Arithmetic Sequences
@@ -26,6 +52,10 @@ $$a_n = a + (n-1)d$$
 > (5,10,15,20,25,...) $5 + (n-1)5$
 
 ##### Get the sum of n terms (arithmetic)
+
+
+
+
 
 
 $$ \sum_{i=a_1}^{n} i(2) = \frac{n}{2} (a_1 + a_n)$$

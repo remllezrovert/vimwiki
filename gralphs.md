@@ -1,8 +1,9 @@
 
 
 # Gralphs #
-[index](index.md) </br>
-[dsa](dsa.md) </br>
+- [index](index.md) </br>
+- [dsa](dsa.md) </br>
+- [dsa-trees](dsa-trees.md)
 
 
 

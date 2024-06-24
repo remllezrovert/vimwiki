@@ -1,71 +1,43 @@
-
-
-
-
-
-
-
-
-
 # Datastructures
 
-<details> <summary>Trees</summary>
-
-Each node can hold:
-1. from zero to multiple pointers
-2. data
+- [dsa-trees](dsa-trees.md)
+- [dsa-hash](dsa-hash.md)
 
 
-#### Binary Search Trees
-- A node with no children is called a leaf node
-- The parent node can be reffered to as the 'root' node 
-- As the computer decends down the tree it compares the target value to each parent node </br>
-if the target value is greater than the parent's key value it points to right child node 
-- Left's key value $\leq$ parent's key value < right's key value
-- Time complexity o(H) where H is the height of the tree
-- Height is on average o(Log N).
 
-bianary search trees can:
-1. search
-2. insert
-3. delete
+<details> <summary>Stacks</summary>
 
-Self balencing bianary search trees
-- red/black trees
-- turn linked lists into search trees
+- Last in first out
+- 
+
+ Op    | Time Complexity | Function
+-------|-----------------|-----------
+push() | O (1) | add to the top
+pop() | O(1) | delete & retreive the top
+peek() | O(1) | retreive the top
+size() | O(1) | find the size
+
 
 </summary> </details>
 
 
-<details> <summary>Heap</summary>
+<details> <summary>Queues</summary>
 
-- Also known as priority queue
-- Abstract data type where elements have priority
-- higher priority elements served first
-- most of the heap is only semi sorted
-- searching through the heap is O(N) time complexity
-- inserting takes O(log n) time
-
-## min heaps 
-- the smallest element will always be at the top
-
-Adding nodes:
-- new nodes attempt to attach to the first available parent (top to bottom left to right)
-- once attached the node compares itself to it's parent. If smaller it will "bubble up", </br>
-swapping places with it's parent until it's either at the top, or it's parent is smaller.
-
-![dsa-minHeapUp](dsa-minHeapUp.gif)
-
-Removing nodes:
-- if the top node is removed, the newest leaf node will be placed on top. Then it (former newest leaf) will bubble </br>
-down the tree, comparing itself to both children until both children are smaller
+- First in first out
 
 
-![dsa-minHeapDown](dsa-minHeapDown.gif)
+ Op    | Time Complexity | Function
+-------|-----------------|-----------
+queue() | O(1) | add to the back
+dequeue() | O(1) | delete & retreive front
+peek() | O(1) | retreive the front
+size() | O(1) | find the size
+getNodeAt(int index) | O(n) | get a node mid queue
+deleteAfter(int index) | O(n) | delete after a particular node
+insertAfter(int index) | O(n) | delete after a particular node
+
 
 </summary> </details>
-
-
 
 
 <details> <summary>lists</summary>
@@ -74,8 +46,16 @@ down the tree, comparing itself to both children until both children are smaller
 
 #### Linked lists ####
 
-each memory address stores the address of the next address.
+Action | Time 
+-------|-------------------
+Accessing elements | O(n)
+Insert/Remove first |O(1)
+Insert/Remove last | O(n)
+Insert/Remove middle |O(n)
 
+each memory address stores the address of the next address. </br>
+
+deleteAfter()
 
 
 
@@ -86,8 +66,67 @@ each memory address stores the address of the next AND previous address
 </summary> </details>
 
 
+
+<details> <summary>Arrays</summary>
+
+
+Action | Time 
+-------|-------------------
+Insert/Remove first |O(1)
+Insert/Remove last | O(n)
+Insert/Remove middle |O(n)
+Searching | O(N)
+Accessing elements | O(1)
+
+
+#### Dynamic Arrays ####
+- Indexes shift after a delete
+    - example {4,3,5,7,9,2,1}
+    - remove(1)
+    - result {4,5,7,9,2,1}
+    - get(1) == 5
+- Automatically assign more memory when array hits max capacity
+
+
+</summary> </details>
+
+
 # Algorythms
 
+
+
+<details> <summary>Big O</summary>
+
+
+O(1) - Constant time </br>
+- random access of an element in an array
+- inserting at the beginning of a linked list
+
+O(log n) - Logarithmic time
+- Binary search
+
+O(n) - Linear time
+- looping through n elements in an array
+- searching through a linked list
+
+O(n log n) = QuasiLinear Time
+- quicksort
+- mergesort
+- heapsort
+
+$O(n^2)$ = Quadratic time
+- Insertion sort
+- Selection sort
+- bubble sort
+
+$O(n!)$ = Factorial time
+- Traveling Salesman Problem
+
+
+
+
+
+</summary> </details>
 
 
 <details> <summary>Binary search</summary>
@@ -119,70 +158,82 @@ def binary_search(arr, target):
 
 
 
-<details> <summary>Depth First Search</summary>
-
-
-```python
-n = ##number of nodes
-g = ##adacency list representing the gralph
-def dfs(at):
-    if visited[at]:
-        return
-    else
-        visited[at] = true
-        neighbors = gralph[at]
-        for next in neighbors:
-            dfs(next)
-
-
-## This starts the search
-start_node = 0
-dfs(start_node)
-
-```
-
-</summary> </details>
-
-
-
-<details> <summary>Bredth First Search</summary>
-
-```
-
-input = ### an undirected connect gralph G. rooted at v1
-output = ## a breadth-first search tree
-
-def breadthFirstSearch (Gralph, root):
-    for node in Gralph:
-        n.distance = INFINITY
-        n.parent = nil
-
-        
-
-
-```
-
-
-</summary> </details>
-
-
 
 
 
 <details> <summary>Selection sort</summary>
 
+Cons:
+- Very Inefficient for large datasets
+
+Pros: 
+- Simple
 
 
+- go through each index in the array one by one
+- compare the current element (i) to every element afer it (j)
+- if i > j then they swap places
 
+```java
+    for (int i = 0; i < array.length - 1; i++){
+        int min = i;
+        for (int j - i + 1; j < array.length; j++){
+            if (array[min] > array [j] ){
+             min = j;
+            
+            }
+
+    }
+
+int temp = array[i]; //these three lines swap min with 
+array[i] = array[min];
+array[min] = temp;
+
+}
+```
 </summary> </details>
 
 
 
 <details> <summary>Insertion sort</summary>
 
-1. Create two piles, sorted and unsorted
-2. pull elements out of the unsorted
-3. place them into the correct position within the sorted
+
+- Bad for large datasets, decent for small ones
+- Runs in Ouadratic time $O(n^2)$
+- Best case is O(n) which is fater than selection sort's best case
+
+- Start at index 1
+- compare current element (i) to everything to the left of it (j)
+    - store i in memory as temp
+- compare i to each element (j) to the left of it
+- if i < j then shift j to the right by one
+    - Repeat this. Stop when j > i
+    - if j > i 
+        - then array[j + 1] = temp
+        - move to the next i
+
+
+
+
+
+```java
+
+private static void insertionSort(int[] array){
+
+for (int i = 1; i < array.length; i++) //start at one so that we can compare to zero
+    {
+    int temp = array[i];
+    int j = i - 1;
+    while(j >= 0 && array[j] > temp){
+        array[j + 1] = array[j]; //shift element to the right
+        j--;
+    }
+    array[j + 1]  = temp;
+}
+}
+
+
+```
 
 
 
@@ -191,8 +242,26 @@ def breadthFirstSearch (Gralph, root):
 
 <details> <summary>Merge sort</summary>
 
-- Recursive
 
+
+$O(n \cdot \log_2{n})$
+
+$\Omega(n \cdot \log_2{n})$
+
+$\Theta (n \cdot \log_2{n})$
+
+
+
+- Recursive "divide and conquer" algorythm
+- Split array into sub arrays until each array is size 1
+- starting at the size 1 arrays
+    - put both of the children back into their parent in sorted order
+    - repeat this until the origional array is sorted
+
+
+#### Comparison ####
+- Fast, comparable to quick sort and heap sort
+- Uses more space than bubble, insert, and selection sort.
 
 </summary> </details>
 
